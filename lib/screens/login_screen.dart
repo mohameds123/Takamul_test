@@ -19,6 +19,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.end,
@@ -40,7 +41,14 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 100.0, right: 16),
+              padding: const EdgeInsets.only(top: 100.0,right: 16.0),
+              child: Image.asset('assets/logo.png',
+              width: 100,
+                height: 100,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only( right: 16),
               child: Text(
                 'رقم جوالك',
                 style: TextStyle(
